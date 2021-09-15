@@ -1,0 +1,34 @@
+body{
+    font-family: "Comic Sans MS", sans-serif;
+    background-color: purple;
+}
+.header{
+    font-family: "Times New Roman", sans-serif;
+    color: yellow;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+.main{
+    font-family: "Comic Sans MS", sans-serif;
+    color: purple;
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+    background-color: greenyellow;
+    border: blue dashed 10px;
+}
+table, th, td{
+    border: 5px solid black;
+    margin: 0 auto;
+    width: 80%;
+    background-color: white;
+}
+
+
+td{
+    padding: 20px
+}
+img {
+    width: 50%;
+}
