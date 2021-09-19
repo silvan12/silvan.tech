@@ -44,7 +44,8 @@ a:active {
 
 .header__welcome {
     text-align: center;
-
+    margin-bottom: 0;
+    margin-top: 50px;
 }
 
 .header__navbar {
