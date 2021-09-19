@@ -16,6 +16,18 @@ body{
     text-align: center;
 
 }
+.header__navbar{
+    justify-content: space-between;
+    display: flex;
+
+}
+.header__links{
+    display: flex;
+}
+.header__link{
+    padding-left: 10px;
+
+}
 .main{
 
 
