@@ -86,11 +86,13 @@ a:active {
 
 .game__description {
     padding: 15px;
-
 }
 
 .home__list {
     list-style: none;
     padding: 0;
+}
+small{/*TODO: This doesn't work*/
+    font-size: 10px;
 }
 
