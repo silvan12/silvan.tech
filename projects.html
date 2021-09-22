@@ -52,18 +52,27 @@
     </div>
 </div>
 <div class="main">
-    <div class="game__card">
-        <a href="https://silvan12.github.io/MazeGameHosting/">
-            <img class="game__image" src="Images/games/mazegame.png" alt="download">
-        </a>
-        <div class="game__description">
-            <h2>Triangle maze</h2>
-            <p>My first finished Unity project. Don't play it</p>
-            <div class="game__footer">
-                <small><a href="https://github.com/silvan12/MazeGame">View on Github</a> | <a href=https://silvan12.github.io/MazeGameHosting/>Play demo in browser</a></small>
-            </div>
-        </div>
+    <script>
+        $(document).ready(function () {
+            $.getJSON("Projects/projects.json", function (result) {
+                $.each(result, function (i, data) {
+                    $(".main").append([
+                        `<div class="game__card">
+  <a href="` + data.github + `">
+    <img class="game__image" src="` + data.image + `" alt="` + data.alt + `">
+  </a>
+  <div class="game__description">
+    <h2>` + data.title + `</h2>
+    <p>` + data.description + `</p>
+    <div class="game__footer">
+      <small><a href="` + data.github + `">View on Github</a> | <a href=` + data.demo + `>Play demo in browser</a></small>
     </div>
+  </div>
+</div>`]);
+                });
+            });
+        })
+    </script>
     <!--<div class="game__card">
         <a href="https://youtu.be/Y4r6lS04RpQ">
             <img style="object-fit: fill" class="game__image" src="Images/games/kanye_west.jpg" alt="download">
