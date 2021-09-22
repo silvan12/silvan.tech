@@ -92,7 +92,17 @@ a:active {
     list-style: none;
     padding: 0;
 }
-small{/*TODO: This doesn't work*/
+
+small {
     font-size: 10px;
+}
+
+@media only screen and (max-width: 480px) {
+    .header {
+        width: 80%;
+    }
+    .game__card{
+        width: 80%;
+    }
 }
 
