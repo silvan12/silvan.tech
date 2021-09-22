@@ -54,12 +54,17 @@
 </div>
 <div class="main">
     <script>
-        $(document).ready(function(){
-            $.getJSON("Projects/mazegame.json", function(data)
-            {
+        $(document).ready(function () {
+            $.getJSON("Projects/mazegame.json", function (data) {
+                $.each(data, function (i, obj) {
+                    console.log(obj.title)
+                });
+            });
+
+            $.getJSON("Projects/mazegame.json", function (data) {
                 $(".main").append([
-                    "<div class=\"game__card\"><a href="+ data.github+"><img class=\"game__image\" src="+data.image+" alt="+data.alt+"></a><div className=\"game__description\"><h2>"+data.title+"</h2><p>"+data.description+"</p><div className=\"game__footer\"><small><a href="+data.github+">View on Github</a> | <a href="+data.demo+">Play demo in browser</a></small></div>"]);
-            }).fail(function(){
+                    "<div class=\"game__card\"><a href=" + data.github + "><img class=\"game__image\" src=" + data.image + " alt=" + data.alt + "></a><div className=\"game__description\"><h2>" + data.title + "</h2><p>" + data.description + "</p><div className=\"game__footer\"><small><a href=" + data.github + ">View on Github</a> | <a href=" + data.demo + ">Play demo in browser</a></small></div>"]);
+            }).fail(function () {
                 document.write("An error has occurred.");
             });
         });
