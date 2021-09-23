@@ -89,6 +89,21 @@ a:active {
     padding: 15px;
 }
 
+.home__card {
+    width: 35%;
+    margin: 0 auto 50px;
+    text-align: center;
+    border: 10px solid #0e0e12;
+    border-radius: 5px;
+    background-color: #1a1a24;
+}
+
+.home__description {
+    padding: 15px;
+}
+
+
+
 .home__list {
     list-style: none;
     padding: 0;
