@@ -4,7 +4,6 @@
     "description": "The website you're looking at right now.",
     "image": "Images/logo_square.png",
     "github": "https://github.com/silvan12/silvan.tech",
-    "demo": "https://silvan.tech/",
     "alt": "Website logo"
   },
   {
@@ -15,5 +14,4 @@
     "demo": "https://silvan12.github.io/MazeGameHosting/",
     "alt": "Triangle Maze screenshot"
   }
-
 ]
