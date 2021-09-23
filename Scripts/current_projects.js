@@ -1,10 +1,16 @@
 $(document).ready(function () {
     $.getJSON("Projects/current_projects.json", function (result) {
-        $.each(result, function (i, data) {
+        if (jQuery.isEmptyObject(result)) {
             $(".home__list").append([
-                `<li><a href="`+data.github+`">`+data.name+`</a></li>`
+                `<li>Nothing! :)</li>`
             ]);
-        });
+        } else {
+            $.each(result, function (i, data) {
+                $(".home__list").append([
+                    `<li><a href="` + data.github + `">` + data.name + `</a></li>`
+                ]);
+            });
+        }
     });
 })
 
