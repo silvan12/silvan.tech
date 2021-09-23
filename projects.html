@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="Style/style.css">
     <!--Jquery + ajax-->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="Scripts/projects.js"></script>
     <!--Meta-->
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -52,51 +53,7 @@
     </div>
 </div>
 <div class="main">
-    <script>
-        $(document).ready(function () {
-            $.getJSON("Projects/projects.json", function (result) {
-                $.each(result, function (i, data) {
-                    $(".main").append([
-                        `<div class="game__card">
-  <a href="` + data.github + `">
-    <img class="game__image" src="` + data.image + `" alt="` + data.alt + `">
-  </a>
-  <div class="game__description">
-    <h2>` + data.title + `</h2>
-    <p>` + data.description + `</p>
-    <div class="game__footer">
-      <small><a href="` + data.github + `">View on Github</a> | <a href=` + data.demo + `>Play demo in browser</a></small>
-    </div>
-  </div>
-</div>`]);
-                });
-            });
-        })
-    </script>
-    <!--<div class="game__card">
-        <a href="https://youtu.be/Y4r6lS04RpQ">
-            <img style="object-fit: fill" class="game__image" src="Images/games/kanye_west.jpg" alt="download">
-        </a>
-        <div class="game__description">
-            <h2>Skit #4</h2>
-            <p>I've called this private meeting today because there is a imposter among us There is an imposter among us This brother right here has been out making beats on the side, yes he has Pretending he's broke walking amongst us.</p>
-            <div class="game__footer">
-                <small><a href="https://github.com/silvan12/silvan.tech">View on Github</a></small>
-            </div>
-        </div>
-    </div>
-    <div class="game__card">
-        <a href="#">
-            <img class="game__image" src="Images/games/download.png" alt="download">
-        </a>
-        <div class="game__description">
-            <h2>Lorem Ipsum</h2>
-            <p>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <div class="game__footer">
-                <small><a href="https://github.com/silvan12/silvan.tech">View on Github</a></small>
-            </div>
-        </div>
-    </div>-->
+    <!--Here projects.js generates some divs-->
 
 </div>
 </body>
