@@ -39,7 +39,7 @@ a:active {
 
 .header {
     margin: 0 auto;
-    width: 35%;
+    width: 40%;
 
 }
 
@@ -70,7 +70,7 @@ a:active {
 }
 
 .game__card {
-    width: 35%;
+    width: 40%;
     margin: 0 auto 50px;
     text-align: center;
     border: 10px solid #0e0e12;
@@ -90,7 +90,7 @@ a:active {
 }
 
 .home__card {
-    width: 35%;
+    width: 40%;
     margin: 0 auto 50px;
     text-align: center;
     border: 10px solid #0e0e12;
